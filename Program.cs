@@ -16,6 +16,36 @@ namespace ConsoleApp3
             int g = f;
         }
 
+        public void ExplicitConversion()
+        {
+
+            int a = 112;
+            char b = (char)a;
+            byte c = (byte)a;
+            short d = (short)a;
+            long e = 6878757657657657;
+            int f = (int)e;
+            double g = 234423.234234432432;
+            float h = (float)g;
+            string i = "3344";
+
+            //To String methode
+            string j = e.ToString();
+
+            //Parsing
+            int k = int.Parse(i);
+            float l = float.Parse(j);
+
+            //Convert class
+            double m = Convert.ToDouble(l);
+            int n = Convert.ToInt32(m);
+            float o = Convert.ToSingle(n);
+            long p = Convert.ToInt64(o);
+            string q = Convert.ToString(p);
+
+
+        }
+
         public void dataTypes() 
         {
             byte a = 1;
