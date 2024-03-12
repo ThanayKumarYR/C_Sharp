@@ -5,6 +5,43 @@ namespace ConsoleApp3
     class Program
 
     {
+        public void arthematicOperations(int a , int b) 
+        {
+            Console.WriteLine($"{a} + {b} = {a + b}");
+            Console.WriteLine($"{a} - {b} = {a - b}");
+            Console.WriteLine($"{a} * {b} = {a * b}");
+            Console.WriteLine($"{a} / {b} = {a / b}");
+            Console.WriteLine($"{a} % {b} = {a % b}");
+        }
+        public void AssignmentOperations(int a, int b)
+        {
+            Console.WriteLine($"{a} += {b} = {a += b}");
+            Console.WriteLine($"{a} -= {b} = {a -= b}");
+            Console.WriteLine($"{a} *= {b} = {a *= b}");
+            Console.WriteLine($"{a} /= {b} = {a /= b}");
+        }
+
+        public void LogicalOperations(bool a, bool b)
+        {
+           Console.WriteLine($"{a} || {b} = {a||b} ");
+           Console.WriteLine($"{a} && {b} = {a && b} ");
+           Console.WriteLine($"Not(!) of {a} = {!a} ");
+        }
+        public void BitwiseOperations(int a,int b)
+        { 
+            Console.WriteLine($"{a} | {b} = {a|b}");
+            Console.WriteLine($"{a} & {b} = {a | b}");
+        }
+        public void ComparisionOperations(int a,int b)
+        {
+            Console.WriteLine($"{a} > {b} = {a > b}");
+            Console.WriteLine($"{a} < {b} = {a < b}");
+            Console.WriteLine($"{a} >= {b} = {a >= b}");
+            Console.WriteLine($"{a} <= {b} = {a <= b}");
+            Console.WriteLine($"{a} != {b} = {a != b}");
+            Console.WriteLine($"{a} == {b} = {a == b}");
+
+        }
         public void implicitConversion()
         {
             byte a = 9;
@@ -98,6 +135,12 @@ namespace ConsoleApp3
 
             Program obg = new Program();
             obg.dataTypes();
+            obg.arthematicOperations(100, 25);
+            obg.AssignmentOperations(100, 25);
+            obg.LogicalOperations(true,false);
+            obg.BitwiseOperations(100,25);
+            obg.ComparisionOperations(100,25);
+            Console.ReadLine() ;
 
 
         }
