@@ -5,6 +5,88 @@ namespace ConsoleApp3
     class Program
 
     {
+        public void ConditionsStatements()
+
+        {
+            //if statement
+            if (true)
+            {
+                Console.WriteLine("if statement");
+            }
+
+
+            //if - else statement
+            if (false)
+            {
+                Console.WriteLine("if block in if-else statement");
+            }
+            else
+            {
+                Console.WriteLine("else block in if-else statement");
+
+            }
+
+            //else-if ladder
+            if (false)
+            {
+                Console.WriteLine("if block in if-else ladder statement");
+            }
+            else if (false)
+            {
+                Console.WriteLine("else if block in if-else ladder statement");
+            }
+            else if (false)
+            {
+                Console.WriteLine("else if block in if-else ladder statement");
+            }
+            else if (true)
+            {
+                Console.WriteLine("else if block in if-else ladder statement");
+            }
+            else
+            {
+                Console.WriteLine("else block in if-else ladder statement");
+
+            }
+
+            //nested if - else condtion
+
+            if (true)
+            {
+                Console.WriteLine("Outer if block");
+                if (false)
+                {
+                    Console.WriteLine("Inner if block");
+
+                }
+                else
+                {
+                    Console.WriteLine("Inner else block");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Outer else block");
+            }
+
+            //switch statement
+
+            int age = 16;
+            switch (age)
+            {
+                case 10: 
+                    Console.WriteLine("You are ten");
+                    break;
+                case 18:
+                    Console.WriteLine("You are eightteen");
+                    break;
+                default: 
+                    Console.WriteLine($"Your age is{age}");
+                    break;
+            }
+
+        }
         public void arthematicOperations(int a , int b) 
         {
             Console.WriteLine($"{a} + {b} = {a + b}");
