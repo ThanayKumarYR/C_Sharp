@@ -19,6 +19,7 @@ namespace ConsoleApp3
             DateTime l = DateTime.Now;
             string m = "'I miss you'";
             object o = new object();
+            decimal p = 0.3493487948m;
 
             Console.WriteLine($"{a} is a byte!");
             Console.WriteLine($"{b} is a short!");
@@ -57,6 +58,8 @@ namespace ConsoleApp3
 
             Program obg = new Program();
             obg.dataTypes();
+
+
         }
     }
 }
