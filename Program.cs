@@ -17,6 +17,15 @@ namespace ConsoleApp3
             Console.WriteLine("Enter the value to the read line which takes string as input !.");
             Console.ReadLine();
 
+            //Single line comments
+
+            /* This
+             * is
+             * a
+             * muilty
+             * line
+             * comment
+             */
         }
     }
 }
