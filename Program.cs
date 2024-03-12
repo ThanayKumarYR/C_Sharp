@@ -5,6 +5,38 @@ namespace ConsoleApp3
     class Program
 
     {
+
+        public void loopingStatements()
+        {
+            int k = 0;
+            int i = 9;
+            int j = 0;
+
+            //while loop
+            while (k<i)
+            {
+                Console.WriteLine(k++);
+            }
+
+            //do-while loop
+            do
+            { 
+                Console.WriteLine("do-while will be exicuted irrespective of the condition being true or false");
+            }while (false);
+
+            //for loop
+
+            for (int y = 0; y < j; y++)
+            { 
+                Console.WriteLine($"{y} times for loop executed!");
+            }
+
+            //for each loop
+            foreach (var item in "abcd")
+            {
+                Console.WriteLine(item);
+            }
+        }
         public void ConditionsStatements()
 
         {
