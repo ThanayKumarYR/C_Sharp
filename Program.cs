@@ -5,6 +5,16 @@ namespace ConsoleApp3
     class Program
 
     {
+        public void implicitConversion()
+        {
+            byte a = 9;
+            short b = a;
+            int c = b;
+            float d = c;
+            double e = d;
+            char f = 'a';
+            int g = f;
+        }
 
         public void dataTypes() 
         {
